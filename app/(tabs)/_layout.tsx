@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="webview_test"
+        options={{
+          title: 'Webview',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'bookmark' : 'bookmark-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
